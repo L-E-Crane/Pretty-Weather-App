@@ -1,3 +1,12 @@
 body {
   text-align: center;
 }
+#current-description {
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+}
+a:active {
+  color: red;
+}
