@@ -31,14 +31,20 @@ function showTemperature(response) {
   let description = response.data.weather[0].description;
   let searchedCity = response.data.name;
   let windspeed = response.data.wind.speed;
+  let currentIcon = document.querySelector("#current-icon");
   let currentCity = document.querySelector("#current-city");
   let currentTemperature = document.querySelector("#current-temperature");
   let weatherDescription = document.querySelector("#current-description");
   let currentWindspeed = document.querySelector("#current-windspeed");
   currentCity.innerHTML = searchedCity;
-  currentTemperature.innerHTML = `${temperature}°C`;
+  currentTemperature.innerHTML = `${temperature}`;
   weatherDescription.innerHTML = description;
   currentWindspeed.innerHTML = `${windspeed} km/h`;
+  currentIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  currentIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
 function citySearch(city) {
@@ -54,3 +60,5 @@ function submitSearch(event) {
 }
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", submitSearch);
+
+citySearch("Portland");

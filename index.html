@@ -22,15 +22,31 @@
     <h1>Weather</h1>
     <p id="date-time">Day & Time</p>
     <p id="current-city">City</p>
-    <p id="current-temperature">Temp</p>
     <div>
-      <img
+      <p>
+        <span id="current-temperature">Temp </span
+        ><sup
+          ><span class="unit-choice"
+            ><a href="#" id="celsius-link" class="active"> °C</a> |
+            <a href="#" id="fahrenheit-link">°F</a></span
+          ></sup
+        >
+      </p>
+    </div>
+    <div>
+      <img id="current-icon"
       src=https://cdn.pixabay.com/photo/2016/03/31/21/00/sun-1296130_960_720.png
       width=50px>
       <span id="current-description">Description</span>
     </div>
     <p id="current-windspeed">Windspeed</p>
-    <form id="search-form"><input id="city-search" type="search" /></form>
+    <form id="search-form">
+      <input
+        id="city-search"
+        type="search"
+        placeholder="Search for a city..."
+      />
+    </form>
   </body>
   <script src="src/index.js"></script>
 </html>
