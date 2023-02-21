@@ -45,7 +45,7 @@ function showTemperature(response) {
   currentWindspeed.innerHTML = `Wind: ${windspeed} km/h`;
   currentIcon.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `media/weathericons/${response.data.weather[0].icon}.png`
   );
   currentIcon.setAttribute("alt", response.data.weather[0].description);
 }

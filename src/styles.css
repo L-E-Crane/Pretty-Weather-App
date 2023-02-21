@@ -1,7 +1,5 @@
 body {
   text-align: center;
-  color: #f9b5d0;
-  background-color: black;
 }
 #current-description {
   text-transform: capitalize;
@@ -12,7 +10,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: #aae3e2;
 }
 #footer {
   font-size: small;
