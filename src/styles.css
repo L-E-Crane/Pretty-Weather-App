@@ -17,3 +17,29 @@ a {
 .unit-choice {
   vertical-align: top;
 }
+
+.form-container {
+  position: relative;
+  margin: auto;
+  min-height: 60%;
+  width: 30%;
+
+  background-image: url("media/searchcartouche.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10% 5%;
+}
+#city-search {
+  display: block;
+  margin: 24%;
+  padding: 0px;
+  width: 80%;
+  height: 5%;
+  size: 50%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  background-color: transparent;
+}
