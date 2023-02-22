@@ -5,19 +5,23 @@ body {
 }
 #current-description {
   text-transform: capitalize;
+  background-color: coral;
 }
 #current-temperature {
   font-size: 50px;
   font-weight: bold;
+  background-color: coral;
 }
 a {
   text-decoration: none;
+  background-color: coral;
 }
 #footer {
   font-size: small;
 }
 .unit-choice {
   vertical-align: top;
+  background-color: coral;
 }
 
 #form-container {
@@ -84,4 +88,7 @@ a {
 #frame-container {
   background-color: fuchsia;
   padding: 2%;
+}
+#current-windspeed {
+  background-color: coral;
 }
