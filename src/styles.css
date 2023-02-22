@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  background-image: url("media/paper-aged.jpg");
+  background-repeat: repeat;
 }
 #current-description {
   text-transform: capitalize;
@@ -18,12 +20,11 @@ a {
   vertical-align: top;
 }
 
-.form-container {
+#form-container {
   position: relative;
   margin: auto;
   min-height: 60%;
-  width: 30%;
-
+  width: 40%;
   background-image: url("media/searchcartouche.png");
   background-size: contain;
   background-position: center;
@@ -32,14 +33,55 @@ a {
 }
 #city-search {
   display: block;
-  margin: 24%;
-  padding: 0px;
+  margin: 24% 25% 25%;
   width: 80%;
   height: 5%;
   size: 50%;
   box-sizing: border-box;
   border: none;
   outline: none;
-  font-size: 12px;
+  font-size: 100%;
   background-color: transparent;
+}
+
+#current-icon {
+  position: relative;
+  width: 20%;
+  z-index: 1;
+}
+.row {
+  border: red 1px solid;
+  background-color: blueviolet;
+}
+.col {
+  border: blue 1px solid;
+}
+#inner-frame {
+  background-position: relative;
+  aspect-ratio: 7/5;
+  background-image: url(media/framebackground.jpg);
+  background-size: cover;
+  margin: 10%;
+  z-index: 2;
+}
+#outer-frame {
+  background-color: aqua;
+  aspect-ratio: 7/5;
+  margin: auto;
+}
+#current-city {
+  display: block;
+  margin: auto;
+  padding: 0px;
+  background-color: lime;
+}
+#date-time {
+  display: block;
+  margin: auto;
+  padding: 0px;
+  background-color: lime;
+}
+#frame-container {
+  background-color: fuchsia;
+  padding: 2%;
 }

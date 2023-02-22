@@ -17,29 +17,43 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Weather</h1>
-    <p id="date-time">Day & Time</p>
-    <p id="current-city">City</p>
-    <div>
-      <p>
-        <span id="current-temperature">Temp </span
-        ><span class="unit-choice"
-          ><a href="#" id="celsius-link" class="active"> °C</a> |
-          <a href="#" id="fahrenheit-link">°F</a></span
-        >
-      </p>
+    <div class="heading">
+      <h1>Weather</h1>
     </div>
-    <div>
-      <img id="current-icon" src="#" width="50px" />
-      <span id="current-description">Description</span>
+    <div class="row" id="frame-container">
+      <p id="current-city">City</p>
+      <div class="row" id="outer-frame">
+        <div class="col" id="inner-frame">
+          <p>
+            <span id="current-temperature">Temp </span
+            ><span class="unit-choice"
+              ><a href="#" id="celsius-link" class="active"> °C</a> |
+              <a href="#" id="fahrenheit-link">°F</a></span
+            >
+          </p>
+          <img id="current-icon" src="#" />
+          <p id="current-description">Description</p>
+          <p id="current-windspeed">Windspeed</p>
+        </div>
+      </div>
+      <p id="date-time">Day & Time</p>
     </div>
-    <p id="current-windspeed">Windspeed</p>
-    <div class="form-container">
-      <form id="search-form">
-        <input id="city-search" type="search" placeholder="Hic quaerere..." />
-      </form>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col" id="form-container">
+        <form id="search-form">
+          <input id="city-search" type="search" placeholder="Quaerere..." />
+        </form>
+      </div>
+      <div class="col"></div>
     </div>
     <a href="https://github.com/L-E-Crane/Pretty-Weather-App" id="footer"
       >My code on GitHub</a
